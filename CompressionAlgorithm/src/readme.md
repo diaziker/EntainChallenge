@@ -1,8 +1,7 @@
 # 📦 String Compression Console App
 
 [![Build](https://github.com/diaziker/EntainChallenge/actions/workflows/compression_build.yml/badge.svg)](https://github.com/diaziker/EntainChallenge/actions/workflows/compression_build.yml)
-[![Tests](https://github.com/diaziker/EntainChallenge/actions/workflows/compression_tests.yml/badge.svg)](https://github.com/diaziker/EntainChallenge/actions/workflows/compression_tests.yml)
-
+[![Tests](https://github.com/diaziker/EntainChallenge/actions/workflows/compression_tests.yml/badge.svg?branch=master)](https://github.com/diaziker/EntainChallenge/actions/workflows/compression_tests.yml)
 ## 📝 Description
 This is a **.NET 9** console application that requests a string input and applies a compression algorithm to reduce its size.
 
