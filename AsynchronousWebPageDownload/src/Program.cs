@@ -22,7 +22,7 @@ internal class Program
             .ConfigureServices((_, services) =>
             {
                 services.AddSingleton<WebPageDownloaderApp>();
-                services.AddSingleton<HttpClientService>();
+                services.AddSingleton<IHttpClientService, HttpClientService>();
                 services.AddSingleton<WebPageDownloader>();
                 services.AddSingleton(Log.Logger);
             })

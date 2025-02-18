@@ -17,7 +17,7 @@ internal class Program
                 continue;
             }
 
-            if (input == "n")
+            if (validatedInput.Value.Equals("n", StringComparison.InvariantCultureIgnoreCase))
                 break;
             
             var output = Compressor.StringCompress(validatedInput.Value);

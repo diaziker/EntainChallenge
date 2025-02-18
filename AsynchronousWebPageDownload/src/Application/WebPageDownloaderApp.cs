@@ -8,9 +8,9 @@ public class WebPageDownloaderApp(WebPageDownloader downloader, IConfiguration c
 {
     public async Task RunAsync(CancellationToken cancellationToken)
     {
-        string[] urls = configuration.GetSection("Urls").Get<string[]>() ?? [];
+        var urls = configuration.GetSection("Urls").Get<List<string>>() ?? [];
         
-        if (urls.Length == 0)
+        if (urls.Count == 0)
         {
             Console.WriteLine("No URLs provided. Exiting.");
             return;

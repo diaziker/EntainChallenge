@@ -3,9 +3,9 @@ using Serilog;
 
 namespace AsyncWebPageDownloader.Services;
 
-public class WebPageDownloader(HttpClientService httpClientService, ILogger logger)
+public class WebPageDownloader(IHttpClientService httpClientService, ILogger logger)
 {
-    public async Task DownloadPagesAsync(string[] urls, CancellationToken cancellationToken)
+    public async Task DownloadPagesAsync(List<string> urls, CancellationToken cancellationToken)
     {
         var downloadTasks = urls
             .Select(url => DownloadPageAsync(url, cancellationToken))
@@ -14,7 +14,7 @@ public class WebPageDownloader(HttpClientService httpClientService, ILogger logg
         try
         {
             await Task.WhenAll(downloadTasks);
-            
+
             if (!cancellationToken.IsCancellationRequested)
                 logger.Information("All downloads completed.");
         }

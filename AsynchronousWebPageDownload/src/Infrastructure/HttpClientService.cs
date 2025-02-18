@@ -3,7 +3,7 @@ using Polly.Retry;
 
 namespace AsyncWebPageDownloader.Infrastructure;
 
-public class HttpClientService
+public class HttpClientService : IHttpClientService
 {
     private readonly HttpClient _httpClient = new();
     private readonly AsyncPolicy<HttpResponseMessage> _retryPolicy = GetRetryPolicy();
