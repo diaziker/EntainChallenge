@@ -14,7 +14,7 @@ public class CompressTests
     [InlineData("BBBBB", "5B")]
     [InlineData("ABABAB", "1A1B1A1B1A1B")]
     [InlineData("", "")]
-    public void CompressString_ShouldReturnExpectedOutput(string input, string expectedOutput)
+    public void ShouldReturnCompressedString(string input, string expectedOutput)
     {
         string result = Compressor.StringCompress(input);
         

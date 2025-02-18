@@ -40,12 +40,12 @@ Before running the application, configure the **URLs to download** in `appsettin
 ### 🔹 1️⃣ Clone the Repository
 ```sh
 git clone https://github.com/diaziker/EntainChallenge.git
-cd ./EntainChallenge
+cd ./EntainChallenge/AsynchronousWebPageDownload/src
 ```
 
 ### 🔹 2️⃣ Run the Application
 Make sure you have .NET 9 SDK installed, then execute:
 
 ```sh
-dotnet run --project ./AsynchronousWebPageDownload/src/AsyncWebPageDownloader.csproj
+dotnet run
 ```

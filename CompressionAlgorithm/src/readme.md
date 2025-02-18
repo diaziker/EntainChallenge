@@ -34,12 +34,12 @@ The application can produce the following outputs:
 ### 🔹 1️⃣ Clone the Repository
 ```sh
 git clone https://github.com/diaziker/EntainChallenge.git
-cd ./EntainChallenge
+cd ./EntainChallenge/CompressionAlgorithm/src
 ```
 
 ### 🔹 2️⃣ Run the Application
 Ensure you have **.NET 9** SDK installed, then run:
 
 ```sh
-dotnet run --project ./CompressionAlgorithm/src/CompressionAlgorithm.csproj
+dotnet run
 ```

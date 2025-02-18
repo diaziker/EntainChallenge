@@ -15,7 +15,7 @@ public class ValidationTests
     [InlineData("AA BB", false)]
     [InlineData("", false)]
     [InlineData(null, false)]
-    public void ValidateString_ShouldReturnExpectedResult(string input, bool expectedResult)
+    public void ShouldReturnIfValidInput(string? input, bool expectedResult)
     {
         bool result = ValidatedString.TryCreate(input, out _);
         
