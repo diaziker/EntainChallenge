@@ -1,7 +1,7 @@
 # 🌐 **Async Web Page Downloader**
 
-[![Build](https://github.com/diaziker/EntainChallenge/actions/workflows/build.yml/badge.svg)](https://github.com/diaziker/EntainChallenge/actions/workflows/build.yml)  
-[![Tests](https://github.com/diaziker/EntainChallenge/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/diaziker/EntainChallenge/actions/workflows/tests.yml)
+[![Async build](https://github.com/diaziker/EntainChallenge/actions/workflows/async_build.yml/badge.svg)](https://github.com/diaziker/EntainChallenge/actions/workflows/async_build.yml)
+[![Async tests](https://github.com/diaziker/EntainChallenge/actions/workflows/async_tests.yml/badge.svg)](https://github.com/diaziker/EntainChallenge/actions/workflows/async_tests.yml)
 
 ## 📝 **Description**
 This is a **.NET 9** program that allows downloading multiple web pages asynchronously, handling retries and cancellations efficiently.
